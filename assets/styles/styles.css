@@ -1,0 +1,13 @@
+header {
+    display: flex;
+}
+
+header img {
+    max-width: 15%;
+}
+
+@media screen and (min-width: 560px) {
+    header img {
+        max-width: 60%;
+    }
+}
