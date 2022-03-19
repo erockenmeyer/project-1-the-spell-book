@@ -1,15 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Spell Book</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400&family=Great+Vibes&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/styles/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
 </head>
+
 <body>
+    <header>
+        <img src="assets/images/spell_book_2__png_overlay__by_lewis4721_denr8s6-fullview.png" />
+        <h1 class="column">Welcome to The Spell Book!</h1>
+        <nav>
+            <ul >
+                <!-- header list element items -->
+                <li>
+                    <a href="#spell-finder"<button class="button is-link is-outlined">Spell Finder</button></a>
+                    
+                </li>
+                <br>
+                <li> 
+                    <a href="#dice-roller"<button class="button is-link is-outlined">Dice Roller</button></a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Hero -->
+        <section class="hero is-link">
+            <div class="hero-body">
+              <p class="title">
+                Link hero
+              </p>
+              <p class="hero image">
+                The Spell Book is a resource available for users of D&D, no matter what skill level, to access spells, dice rolls
+              </p>
+            </div>
+          </section>
+    </header>
+    <form id="spell-search">
+        <div class="dropdown is-active">
+            <div class="dropdown-trigger">
+              <button class="button" aria-haspopup="true" aria-controls="dropdown-menu2">
+                <span>Search</span>
+                <span class="icon is-small">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu2" role="menu">
+              <div class="dropdown-content">
+                <a href="#" class="dropdown-item">
+                    Level
+                  </a>
+                <hr class="dropdown-divider">
+                <a href="#" class="dropdown-item">
+                    School
+                  </a>
+                <hr class="dropdown-divider">
+                <a href="#" class="dropdown-item">
+                  Both
+                </a>
+              </div>
+            </div>
+          </div>
+        <input name="" id="username" type="text" autofocus="true" class="form-input" />
+        <button type="submit" class="btn">Search Spells!</button>
+    </form>
+    <div>
+        <h3>Search History</h3>
+    </div>
     
     <script src="./assets/js/script.js"></script>
 </body>
+
 </html>

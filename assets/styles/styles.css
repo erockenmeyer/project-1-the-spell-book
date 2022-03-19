@@ -1,0 +1,22 @@
+header {
+    display: flex;
+}
+
+header img {
+    max-width: 25%;
+}
+
+header h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 75px;
+}
+
+.hero-body {
+    background-color: #6B5FC3;
+}
+
+@media screen and (max-width: 820px) {
+    header img {
+        max-width: 60%;
+    }
+}
