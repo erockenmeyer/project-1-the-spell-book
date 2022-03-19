@@ -3,7 +3,7 @@ header {
 }
 
 header img {
-    max-width: 15%;
+    max-width: 25%;
 }
 
 @media screen and (max-width: 820px) {
