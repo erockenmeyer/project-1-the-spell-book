@@ -1,9 +1,14 @@
 header {
-    display: flex;
+    display: inline;
 }
 
 header img {
     max-width: 25%;
+}
+
+header h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 75px;
 }
 
 .hero-body {
