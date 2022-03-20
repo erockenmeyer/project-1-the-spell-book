@@ -14,13 +14,17 @@ header {
 }
 
 header img {
-    max-width: 15%;
+    max-width: 19%;
+    float: left;
 }
 
 header h1 {
+    font-weight: bold;
     font-family: 'Great Vibes', cursive;
+    margin: 0;
     font-size: 75px;
-    float: right;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .hero-body {
@@ -34,8 +38,9 @@ header h1 {
     flex-wrap: wrap;
 }
 
+
 @media screen and (max-width: 820px) {
     header img {
-        max-width: 6%;
+        max-width: 60%;
     }
 }
