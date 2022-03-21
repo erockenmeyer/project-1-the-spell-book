@@ -1,5 +1,5 @@
 var formEl = document.querySelector("#spell-search");
-var searchTypeEl = document.querySelector("#dropdown-menu2");
+var searchTypeEl = document.querySelector("#spell-type");
 var spellTypeEl = document.querySelector("#username");
 var historyEl = document.querySelector("#search-history");
 var searchListEl = document.querySelector("#search-list");
@@ -10,9 +10,11 @@ var formSubmitHandler = function(event) {
     event.preventDefault();
 
     // get type from input
-    // var keyword = spellTypeEl.value.trim();
-    var searchType = searchTypeEl.value();
+    var keyword = spellTypeEl.value.trim();
+    var searchType = searchTypeEl.options[searchTypeEl.selectedIndex].text;
+    console.log(searchType);
 
+    // checks that both were filled out
     if (keyword && searchType) {
         var historyObj = {
             type: searchType,
@@ -21,14 +23,12 @@ var formSubmitHandler = function(event) {
         displayHistory(historyObj);
         getSpellList(searchType, keyword);
     }
-
-    console.log(searchType);
 }
 
 var getSpellList = function(type, keyword) {
 
     // checks for multiple types
-    if (type === "level" || type === "school") {
+    if (type === "Level" || type === "School") {
         // format api url
         var apiUrl = "https://www.dnd5eapi.co/api/spells?" + type + "=" + keyword;
     } else {
@@ -61,7 +61,7 @@ var getSpellList = function(type, keyword) {
                 displayList(data);
             })
         } else {
-            console.log("Something went wrong!");
+            searchListEl.textContent = "Something went wrong!";
         }
     })
 }
@@ -97,7 +97,6 @@ function displayList(data) {
         listEl.appendChild(urlEl);
         listContainer.appendChild(listEl);
     }
-    console.log(spellList[0]);
 
     // append container to dom
     searchListEl.appendChild(listContainer);
@@ -136,11 +135,11 @@ var loadHistory = function() {
     // convert to array & display
     history = JSON.parse(history);
     for (var i = 0; i < history.length; i++) {
-        displayHistory(history);
+        displayHistory(history[i]);
     }
 }
 
-getSpellList("level", "2");
-
+// event listener for form
 formEl.addEventListener("submit", formSubmitHandler);
+// display history on page load
 loadHistory();
