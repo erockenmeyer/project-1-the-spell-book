@@ -5,26 +5,42 @@
 }
 
 header {
+    padding: 10px 10px;
     display: flex;
-    background-color: #D7D8EB;
+    background-color: rgba(215, 216, 235, .35);
+    flex-wrap: wrap;
 }
 
+
 header img {
-    max-width: 19%;
+    max-width: 15%;
     float: left;
 }
 
 header h1 {
     font-weight: bold;
     font-family: 'Great Vibes', cursive;
-    margin: 0;
-    font-size: 75px;
-    display: flex;
-    flex-wrap: wrap;
+    font-size: 55px;
+    text-decoration: none;
+}
+
+
+header button {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 900;
+    margin: 15px;
+}
+
+.page-content {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 30px;
 }
 
 .hero-body {
-    background-color: #6B5FC3;
     background-image: url("../images/purpledie.jpg");
     background-size: 100%;
     background-attachment: fixed;
@@ -32,6 +48,7 @@ header h1 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin: 10px;
 }
 
 .section-1 {
@@ -40,7 +57,13 @@ header h1 {
     z-index: 1000;
 }
 
+.footer {
+    font-size: 22px;
+    background-color: #D7D8EB;
+}
+
 @media screen and (max-width: 820px) {
+
     header img {
         max-width: 60%;
     }
