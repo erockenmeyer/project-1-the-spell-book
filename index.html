@@ -17,7 +17,7 @@
     <header>
         <img src="assets/images/spell_book_2__png_overlay__by_lewis4721_denr8s6-fullview.png" />
         <h1 class="column">Welcome to The Spell Book!</h1>
-        <section>
+        <section class="section-1">
           <nav>
            <div class="field is-grouped">
              <p class="control">
@@ -48,33 +48,13 @@
           </section>
     </header>
     <form id="spell-search">
-        <div class="dropdown is-active">
-            <div class="dropdown-trigger">
-              <button class="button" aria-haspopup="true" aria-controls="dropdown-menu2">
-                <span>Search</span>
-                <span class="icon is-small">
-                  <i class="fas fa-angle-down" aria-hidden="true"></i>
-                </span>
-              </button>
-            </div>
-            <div class="dropdown-menu" id="dropdown-menu2" role="menu">
-              <div class="dropdown-content">
-                <a href="#" class="dropdown-item">
-                    Level
-                  </a>
-                <hr class="dropdown-divider">
-                <a href="#" class="dropdown-item">
-                    School
-                  </a>
-                <hr class="dropdown-divider">
-                <a href="#" class="dropdown-item">
-                  Both
-                </a>
-              </div>
-            </div>
-          </div>
+        <select id="spell-type">
+            <option value="1">Level</option>
+            <option value="2">School</option>
+            <option value="3">Both</option>
+          </select>
         <input name="" id="username" type="text" autofocus="true" class="form-input" />
-        <button type="submit" class="btn">Search Spells!</button>
+        <button type="submit" class="button is-small is-link is-outlined">Search Spells!</button>
     </form>
     <div>
         <h3>Search History</h3>
