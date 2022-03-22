@@ -16,19 +16,21 @@
 </head>
 
 <body>
-  <input id="dice-input" type="number" />
+  
   <div class="dropdown is-active">
     <select id="dice-type">
       <option value="1">D4</option>
       <option value="2">D6</option>
       <option value="3">D8</option>
-      <option value="3">D10</option>
-      <option value="3">D12</option>
-      <option value="3">D20</option>
+      <option value="4">D10</option>
+      <option value="5">D12</option>
+      <option value="6">D20</option>
     </select>
   </div>
   <button type="submit" class="btn">Roll Dice</button>
-  <div id="dice-display"></div>
+  <div id="dice-display">
+    <h2 id="result">Result</h2>
+  </div>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="./assets/js/dice-roll.js"></script>
 </body>

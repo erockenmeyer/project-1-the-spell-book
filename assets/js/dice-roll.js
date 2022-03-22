@@ -1,9 +1,16 @@
 
-var type =["d6","d20"];
-var i=1;
-var rollDice =function(){
+var diceTypeEl=document.querySelector('#dice-type');
+var resultEl=$('#result');
+var chosenType;
+
+
+diceTypeEl.addEventListener('change',()=>{
+    chosenType=diceTypeEl.options[diceTypeEl.selectedIndex].text;
+   
+});
+var getDiceApi =function(){
   
-   /* var diceURL="http://roll.diceapi.com/json/" +type[i];
+    var diceURL="http://roll.diceapi.com/json/" + chosenType;
     
     fetch(diceURL).then(function(response) {
         if (response.ok) {
@@ -11,20 +18,12 @@ var rollDice =function(){
                 console.log(data);
             })
         } else {
-            console.log("Something went wrong!");
+            alert("Something went wrong!");
         }
-    });*/
-
-    const dicefetch =  fetch('http://roll.diceapi.com/' + type[i], {
-        header:{
-            'Accept': 'application/json'}
+    })
+    .catch(function(error){
+        alert('Unable to connect to Dice Api');
     });
+};
 
-    const diceResult = await dicefetch.json();
-    var diceNumber=diceResult.value; 
-    console.log(diceNumber);
-    
-    
-}
 
-rollDice();
