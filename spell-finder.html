@@ -11,34 +11,48 @@
         <link rel="stylesheet" href="./assets/styles/styles.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
 </head>
-<body>
-    
-<header>
-    <div>
-      <h1 class="column">The Spell Book</h1>
-       </div>
-
-</header>    
 
 <body>
-    <div>
-    <p>Search for spells and get information!
-    </p>
-   </div>
+  <!--Header-->
+  <header class="is-flex is-justify-content-space-between">
+    <a href="./index.html">
+        <h1 class="ml-4">The Spell Book</h1>
+    </a>
+    <nav >
+        <div class="mr-2">
+          <a href="./dice-roller.html">
+            <button class="navbar-item button is-link is-outlined is-medium">
+                Dice Roller
+            </button>
+          </a>
+    </nav>
+</header>
+
+<!--spell name-->
+
+<header class="page-content">
+  <h2 class="spell-search">Spell Name:</h2>
+</header>
+
+<!--Spell info-->
+<header class="page-content">
+  <div class="spell-search" class="page-content">
+    <h2 class="Subtitle">Spell Information: <span id="Spell-info"></span></h2>
+  </div>
+</header>
 
 
-  <main class="flex-row justify-space-between">
-    <div class="col-12 col-md-4">
-      <div>
-          <h2>Spell Name</h2>
-          
-      </div>
 
-    <div class=>
-      <h2 class=>Spell information:</h2>
-   </div>
+<!--Footer-->
+  <footer class="page-content footer">
+    <div class="content has-text-centered">
+        <p>
+            &copy; 2022 The Spell Book
+            <br> <strong> 🪄 Made by Erik Rockenmeyer, Luis Valenzuela, Anh Vuong, & Layne Wegenast 🔮 </strong>
+        </p>
+    </div>
+</footer>
 
-  </main>
 
   <script src="./assets/js/script.js"></script>
 </body>
