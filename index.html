@@ -2,67 +2,68 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Spell Book</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400&family=Great+Vibes&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/styles/styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Spell Book</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400&family=Great+Vibes&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./assets/styles/styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
 </head>
 
 <body>
-    <header>
-        <img src="assets/images/spell_book_2__png_overlay__by_lewis4721_denr8s6-fullview.png" />
-        <h1 class="column">Welcome to The Spell Book!</h1>
-        <section class="section-1">
-          <nav>
-           <div class="field is-grouped">
-             <p class="control">
-               <button class="button is-link is-outlined">
-                 Spell finder
-               </button>
-             </p>
-             <p class="control">
-               <button class="button is-link is-outlined">
-                 Dice roller
-               </button>
-             </p>
-           </div>
-        </nav>
+  <header>
+    <img src="assets/images/spell_book_2__png_overlay__by_lewis4721_denr8s6-fullview.png" />
+    <h1 class="column">Welcome to The Spell Book!</h1>
+    <nav>
+      <ul>
+        <!-- header list element items -->
+        <li>
+          <a href="./spell-finder.html" <button class="button is-link is-outlined">Spell Finder</button></a>
+
+        </li>
+        <br>
+        <li>
+          <a href="./dice-roller.html" <button class="button is-link is-outlined">Dice Roller</button></a>
+        </li>
+      </ul>
+    </nav>
 
 
-        </section>
-        <!-- Hero -->
-        <section class="hero is-link">
-            <div class="hero-body">
-              <p class="title">
-                
-              </p>
-              <p class="hero image">
-                The Spell Book is a resource available for users of D&D, no matter what skill level, to access spells, dice rolls
-              </p>
-            </div>
-          </section>
-    </header>
-    <form id="spell-search">
-        <select id="spell-type">
-            <option value="1">Level</option>
-            <option value="2">School</option>
-            <option value="3">Both</option>
-          </select>
-        <input name="" id="username" type="text" autofocus="true" class="form-input" />
-        <button type="submit" class="button is-small is-link is-outlined">Search Spells!</button>
-    </form>
-    <div>
-        <h3>Search History</h3>
-        <ul  id="search-history"></ul>
-    </div>
-    <div id="search-list"></div>
-    <!-- results -->
-    <script src="./assets/js/script.js"></script>
+    </section>
+    <!-- Hero -->
+    <section class="hero is-link">
+      <div class="hero-body">
+        <p class="title">
+
+        </p>
+        <p class="hero image">
+          The Spell Book is a resource available for users of D&D, no matter what skill level, to access spells, dice
+          rolls
+        </p>
+      </div>
+    </section>
+  </header>
+  <form id="spell-search">
+    <select id="spell-type">
+      <option value="1">Level</option>
+      <option value="2">School</option>
+      <option value="3">Both</option>
+    </select>
+    <input name="" id="username" type="text" autofocus="true" class="form-input" />
+    <button type="submit" class="button is-small is-link is-outlined">Search Spells!</button>
+  </form>
+  <div>
+    <h3>Search History</h3>
+    <ul id="search-history"></ul>
+  </div>
+  <div id="search-list"></div>
+  <!-- results -->
+  <script src="./assets/js/script.js"></script>
 </body>
 
 </html>

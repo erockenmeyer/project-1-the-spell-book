@@ -6,7 +6,7 @@ var searchListEl = document.querySelector("#search-list");
 var searchHistory = [];
 var searchCounter = 0;
 
-var formSubmitHandler = function(event) {
+var formSubmitHandler = function (event) {
     event.preventDefault();
 
     // get type from input
@@ -25,7 +25,7 @@ var formSubmitHandler = function(event) {
     }
 }
 
-var getSpellList = function(type, keyword) {
+var getSpellList = function (type, keyword) {
 
     // checks for multiple types
     if (type === "Level" || type === "School") {
@@ -55,9 +55,9 @@ var getSpellList = function(type, keyword) {
     }
 
     // make request to url
-    fetch(apiUrl).then(function(response) {
+    fetch(apiUrl).then(function (response) {
         if (response.ok) {
-            response.json().then(function(data) {
+            response.json().then(function (data) {
                 displayList(data);
             })
         } else {
@@ -102,7 +102,7 @@ function displayList(data) {
     searchListEl.appendChild(listContainer);
 }
 
-var displayHistory = function(historyObj) {
+var displayHistory = function (historyObj) {
     var historyItemEl = document.createElement("li");
 
     // add counter as custom attribute
@@ -122,11 +122,11 @@ var displayHistory = function(historyObj) {
 }
 
 // saves history to local
-var saveSearch = function() {
+var saveSearch = function () {
     localStorage.setItem("search history", JSON.stringify(searchHistory));
 }
 
-var loadHistory = function() {
+var loadHistory = function () {
     var history = localStorage.getItem("search history");
     if (!history) {
         return false;
