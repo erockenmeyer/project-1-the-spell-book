@@ -27,27 +27,24 @@
         <nav>
             <div class="navbar-end">
                 <button class="navbar-item button is-link is-outlined">
-                    Spell finder
+                    Spell Finder
                 </button>
                 <button class="navbar-item button is-link is-outlined">
-                    Dice roller
+                    Dice Roller
                 </button>
             </div>
         </nav>
     </header>
     <!-- Hero -->
-    <section class="hero is-medium">
+    <section class="hero">
         <div class="hero-body page-content">
-            <p class="title">
-
-            </p>
-            <p class="hero image">
-                The Spell Book is a resource available for users of D&D, no matter what skill level, to access
+            <p class="hero-text">
+                The Spell Book is a resource available for all users of D&D, no matter what skill level, to access
                 spells, dice rolls
             </p>
         </div>
     </section>
-
+    
     <!-- spell search form -->
     <form id="spell-search" class="spell-search page-content">
         <select id="spell-type" class="form-content">
@@ -55,10 +52,10 @@
             <option value="2">School</option>
             <option value="3">Both</option>
         </select>
-        <input name="" id="username" type="text" autofocus="true" class="form-content" />
+        <input name="" id="username" type="text" autofocus="true" class="form-content" placeholder="Enter type name" />
         <button type="submit" class="button is-small is-link is-outlined">Search Spells!</button>
     </form>
-    <div id="search-history">
+    <div id="search-history" class="search-history">
         <h3>Search History</h3>
     </div>
     <div id="search-list"></div>
