@@ -17,26 +17,23 @@
 
 <body>
     <!-- nav header -->
-    <header>
-        <div class="navbar-start">
+    <header class="is-flex is-justify-content-space-between">
         <a href="/">
-            <img src="assets/images/spell_book_2__png_overlay__by_lewis4721_denr8s6-fullview.png" />
-            <h1 class="">The Spell Book</h1>
+            <h1 class="ml-4">The Spell Book</h1>
         </a>
-    </div>
-        <nav>
-            <div class="navbar-end">
-                <button class="navbar-item button is-link is-outlined">
+        <nav >
+            <div class="mr-2">
+                <button class="navbar-item button is-link is-outlined is-medium">
                     Spell Finder
                 </button>
-                <button class="navbar-item button is-link is-outlined">
+                <button class="navbar-item button is-link is-outlined is-medium">
                     Dice Roller
                 </button>
             </div>
         </nav>
     </header>
     <!-- Hero -->
-    <section class="hero">
+    <section class="hero mx-4">
         <div class="hero-body page-content">
             <p class="hero-text">
                 The Spell Book is a resource available for all users of D&D, no matter what skill level, to access
@@ -46,16 +43,16 @@
     </section>
     
     <!-- spell search form -->
-    <form id="spell-search" class="spell-search page-content">
-        <select id="spell-type" class="form-content">
+    <form id="spell-search" class="spell-search page-content ml-4">
+        <select id="spell-type" class="form-content is-medium">
             <option value="1">Level</option>
             <option value="2">School</option>
             <option value="3">Both</option>
         </select>
-        <input name="" id="username" type="text" autofocus="true" class="form-content" placeholder="Enter type name" />
-        <button type="submit" class="button is-small is-link is-outlined">Search Spells!</button>
+        <input name="" id="username" type="text" autofocus="true" class="form-content is-medium" placeholder="Enter type name" />
+        <button type="submit" class="button is-medium is-link is-outlined">Search Spells!</button>
     </form>
-    <div id="search-history" class="search-history">
+    <div id="search-history" class="search-history ml-4">
         <h3>Search History</h3>
     </div>
     <div id="search-list"></div>
