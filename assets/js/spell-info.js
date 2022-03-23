@@ -43,6 +43,8 @@ var displaySpellInfo = function (info) {
         var infoEl = document.createElement("p");
         // add classes to elements
 
+        nameEl.classList="";
+
         // switch case to fill content
         var array = spellInfo[i];
         var key = array[0];

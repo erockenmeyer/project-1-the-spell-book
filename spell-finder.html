@@ -8,24 +8,56 @@
     <title>Spell Finder</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400&family=Great+Vibes&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400&family=Great+Vibes&display=swap">
+    <link rel="stylesheet">
     <link rel="stylesheet" href="./assets/styles/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
 </head>
 
 <body>
+  <!--Header-->
+  <header class="is-flex is-justify-content-space-between">
+    <a href="./index.html">
+        <h1 class="ml-4">The Spell Book</h1>
+    </a>
+    <nav >
+        <div class="mr-2">
+          <a href="./dice-roller.html">
+            <button class="navbar-item button is-link is-outlined is-medium">
+                Dice Roller
+            </button>
+          </a>
+    </nav>
+</header>
 
-    <header>
-        <h1>Welcome to the spell book!</h1>
+<section class="hero mx-4">
+  <div class="hero-spell page-content">
+      <p class="hero-text mx-auto" id="spell-name">
+          
+      </p>
+  </div>
+</section>
 
-    </header>
+<!--Spell info-->
+<section>
+    <div class="spell-info">
+        <h3>Spell information</h3>
+        <div id="spell-info">
+    </div>
 
-    <h2 id="spell-name"></h2>
+</section>
 
     <section id="spell-info"></section>
 
+<!--Footer-->
+  <footer class="page-content footer">
+    <div class="content has-text-centered">
+        <p>
+            &copy; 2022 The Spell Book
+            <br> <strong> 🪄 Made by Erik Rockenmeyer, Luis Valenzuela, Anh Vuong, & Layne Wegenast 🔮 </strong>
+        </p>
+    </div>
+</footer>
 
 
 
