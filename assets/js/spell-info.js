@@ -42,8 +42,7 @@ var displaySpellInfo = function (info) {
         var nameEl = document.createElement("span");
         var infoEl = document.createElement("p");
         // add classes to elements
-
-        nameEl.classList="";
+        nameEl.classList="has-text-weight-bold";
 
         // switch case to fill content
         var array = spellInfo[i];
