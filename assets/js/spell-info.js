@@ -46,7 +46,7 @@ var displaySpellInfo = function (info) {
         var array = spellInfo[i];
         var key = array[0];
         var value = array[1];
-
+        
         // use switch case to check what to print
         switch (key) {
             case 'level':
@@ -130,12 +130,26 @@ var displaySpellInfo = function (info) {
                 var damageArr = damageInfo[1][1];
                 var higherLevel = Object.entries(damageArr);
                 console.log(higherLevel);
-                var amounts = [];
+                var amountListEl = document.createElement("ul");
                 for (var z = 0; z < higherLevel.length; z++) {
-                    console.log(higherLevel[z]);
-                    
+                    var currentArr = higherLevel[z];
+                    var listItemEl = document.createElement("li");
+                    listItemEl.textContent = "At " + currentArr[0] + ", " + currentArr[1] + " " + damageName + " damage.";
+                    amountListEl.appendChild(listItemEl);
                 }
-                infoEl.textContent = value + " " + damageName;
+                infoEl.appendChild(amountListEl);
+                break;
+            case 'heal_at_slot_level':
+                nameEl.textContent = "Healing at Slot Level"
+                var healInfo = Object.entries(value);
+                var healListEl = document.createElement("ul");
+                for (var a = 0; a < healInfo.length; a++) {
+                    var thisLevel = healInfo[a];
+                    var healListItem = document.createElement("li");
+                    healListItem.textContent = "At level " + thisLevel[0] + ", " + thisLevel[1] + " healing.";
+                    healListEl.appendChild(healListItem);
+                }
+                infoEl.appendChild(healListEl);
                 break;
             default:
                 break;
