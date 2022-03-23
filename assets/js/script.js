@@ -93,6 +93,7 @@ function displayList(data) {
         var urlEl = document.createElement("a");
         urlEl.setAttribute("href", "./spell-finder.html?spell=" + url);
         urlEl.textContent = name;
+        // add classes to elements
 
         // append to container
         listEl.appendChild(urlEl);
