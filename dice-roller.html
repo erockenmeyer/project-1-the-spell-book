@@ -18,7 +18,7 @@
 <body>
 
   <header class="is-flex is-justify-content-space-between">
-    <a href="/">
+    <a href="./index.html">
       <h1 class="ml-4">The Spell Book</h1>
     </a>
     <nav>
@@ -46,21 +46,22 @@
 
   <!-- dice roll form-->
   <div class="columns mx-3">
-  <section class="dice-roller column is-two-fifths mx-4 my-6">
-    <input id="times" type="number" placeholder="Select number of dice" />
-    <div class="dropdown is-active">
-      <select id="dice-type">
-        <option value="1">D4</option>
-        <option value="2">D6</option>
-        <option value="3">D8</option>
-        <option value="4">D10</option>
-        <option value="5">D12</option>
-        <option value="6">D20</option>
-      </select>
-    </div>
-    <button type="submit" class="btn button is-medium is-link is-outlined">Roll Dice</button>
-  <button type="submit" onClick="refreshPage()">Refresh Page</button>
-  </section>
+    <section class="dice-roller column is-two-fifths mx-4 is-justify-content-center my-6">
+      <div class="columns">
+        <input class="column m-4" id="times" type="number" placeholder="Select number of dice" />
+
+        <select id="dice-type" class="column-3 m-4">
+          <option value="1">D4</option>
+          <option value="2">D6</option>
+          <option value="3">D8</option>
+          <option value="4">D10</option>
+          <option value="5">D12</option>
+          <option value="6">D20</option>
+        </select>
+
+        <button type="submit" class="btn button is-medium is-link is-outlined column">Roll Dice</button>
+      </div>
+    </section>
     <!--dice display-->
     <section id="display" class="dice-display column mx-3 my-6 is-half">
       <div id="dice-display">

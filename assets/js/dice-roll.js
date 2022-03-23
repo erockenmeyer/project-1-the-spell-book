@@ -38,6 +38,7 @@ else{
 
 });
 var getDiceResult=function(data){
+    resultEl.textContent = "";
     for (var i=0; i<rollTimes.value;i++){
     var result=data.dice[i].value;
     
