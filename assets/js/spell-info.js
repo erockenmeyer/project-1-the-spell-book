@@ -34,7 +34,6 @@ var displaySpellInfo = function (info) {
     spellNameEl.textContent = info.name;
     // make array to iterate through
     var spellInfo = Object.entries(info);
-    console.log(spellInfo);
 
     // iterate through array
     for (var i = 0; i < spellInfo.length; i++) {
@@ -56,11 +55,17 @@ var displaySpellInfo = function (info) {
                 break;
             case 'classes':
                 nameEl.textContent = "Class";
-                infoEl.textContent = value;
+                var classes = [];
+                for (var x = 0; x < value.length; x++) {
+                    var y = value[x].name;
+                    classes.push(y);
+                }
+                classes = classes.join(", ");
+                infoEl.textContent = classes;
                 break;
             case 'school':
                 nameEl.textContent = "School";
-                infoEl.textContent = value;
+                infoEl.textContent = value.name;
                 break;
             case 'components':
                 nameEl.textContent = "Components";
@@ -119,7 +124,18 @@ var displaySpellInfo = function (info) {
                 break;
             case 'damage':
                 nameEl.textContent = "Damage";
-                infoEl.textContent = value;
+                var damageInfo = Object.entries(value);
+                var damageType = damageInfo[0];
+                var damageName = damageType[1].name;
+                var damageArr = damageInfo[1][1];
+                var higherLevel = Object.entries(damageArr);
+                console.log(higherLevel);
+                var amounts = [];
+                for (var z = 0; z < higherLevel.length; z++) {
+                    console.log(higherLevel[z]);
+                    
+                }
+                infoEl.textContent = value + " " + damageName;
                 break;
             default:
                 break;

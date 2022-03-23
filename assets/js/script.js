@@ -78,6 +78,7 @@ function displayList(data) {
 
     // clear any old content
     searchListEl.textContent = "";
+    searchListEl.innerHTML = "";
 
     // create container in search list div
     var listContainer = document.createElement("ul");
