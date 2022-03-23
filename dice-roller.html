@@ -17,40 +17,45 @@
 
 <body>
   <header class="is-flex is-justify-content-space-between">
-        <a href="/">
-            <h1 class="ml-4">The Spell Book</h1>
-        </a>
-        <nav >
-            <div class="mr-2 ">
-                <button class="navbar-item button is-link is-outlined is-medium">
-                    Spell Finder
-                </button>
-            </div>
-        </nav>
-    </header>
-  <section class="dice-roller">
-  <input id="dice-input" type="number" />
-  <div class="dropdown is-active">
-    <select id="dice-type">
-      <option value="1">D4</option>
-      <option value="2">D6</option>
-      <option value="3">D8</option>
-      <option value="3">D10</option>
-      <option value="3">D12</option>
-      <option value="3">D20</option>
-    </select>
-  </div>
-  <button type="submit" class="btn button is-medium is-link is-outlined">Roll Dice</button>
-</section>
+    <a href="/">
+      <h1 class="ml-4">The Spell Book</h1>
+    </a>
+    <nav>
+      <div class="mr-2 ">
+        <button class="navbar-item button is-link is-outlined is-medium">
+          Spell Finder
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- dice roll form-->
+  <section class="dice-roller column is-two-fifths mx-3">
+    <input id="dice-input" type="number" />
+    <div class="dropdown is-active">
+      <select id="dice-type">
+        <option value="1">D4</option>
+        <option value="2">D6</option>
+        <option value="3">D8</option>
+        <option value="3">D10</option>
+        <option value="3">D12</option>
+        <option value="3">D20</option>
+      </select>
+    </div>
+    <button type="submit" class="btn button is-medium is-link is-outlined">Roll Dice</button>
+  </section>
+
   <div id="dice-display"></div>
+
+  <!-- footer -->
   <footer class="page-content footer">
     <div class="content has-text-centered">
-        <p>
-            &copy; 2022 The Spell Book
-            <br> <strong> 🪄 Made by Erik Rockenmeyer, Luis Valenzuela, Anh Vuong, & Layne Wegenast 🔮 </strong>
-        </p>
+      <p>
+        &copy; 2022 The Spell Book
+        <br> <strong> 🪄 Made by Erik Rockenmeyer, Luis Valenzuela, Anh Vuong, & Layne Wegenast 🔮 </strong>
+      </p>
     </div>
-</footer>
+  </footer>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 </body>
 
