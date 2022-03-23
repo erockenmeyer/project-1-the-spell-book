@@ -104,6 +104,24 @@ box-shadow: 0 0 5px rgba(0, 0, 0, .25);
 background-color: rgba(215, 216, 235, .75);
 }
 
+.dice-display {
+border: 3px solid #5D41BE;
+font-family:'Cormorant Garamond', serif;
+font-size: 20px;
+font-weight: bolder;
+border-radius: 5px;
+box-shadow: 0 0 5px rgba(0, 0, 0, .25);
+background-color: rgba(215, 216, 235, .75);
+flex-wrap: wrap;
+box-sizing:content-box;
+width: 100%;
+position:absolute;
+top: 410px;
+right: 0;
+width: 200px;
+height: 100px;
+}
+
 .footer {
     font-size: 22px;
     opacity: .6;
