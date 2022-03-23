@@ -58,6 +58,9 @@ header button {
     flex-wrap: wrap;
 }
 
+.hero-spell {
+    background-image: url("../images/Night-sky.jpg");
+}
 
 .spell-search {
     border: 3px solid #5D41BE;
@@ -96,6 +99,17 @@ header button {
 .footer {
     font-size: 22px;
     opacity: .6;
+}
+
+.spell-info {
+    border: 3px solid #5D41BE;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .25);
+    background-color: rgba(215, 216, 235, .75);
+    margin: 10px;
+    padding: 15px;
+    width: auto;
+    text-align:center;
 }
 
 
