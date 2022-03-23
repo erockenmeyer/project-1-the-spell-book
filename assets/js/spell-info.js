@@ -49,7 +49,7 @@ var displaySpellInfo = function (info) {
         var array = spellInfo[i];
         var key = array[0];
         var value = array[1];
-        
+
         // use switch case to check what to print
         switch (key) {
             case 'level':

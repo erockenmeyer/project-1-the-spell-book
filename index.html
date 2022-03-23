@@ -2,84 +2,79 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Spell Book</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400&family=Great+Vibes&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./assets/styles/styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Spell Book</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400&family=Great+Vibes&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./assets/styles/styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
 </head>
 
 <body>
-    <!-- nav header -->
-    <header class="is-flex is-justify-content-space-between">
-        <a href="/">
-            <h1 class="ml-4">The Spell Book</h1>
-        </a>
-        <nav>
-            <div class="mr-2 ">
-                <a href="spell-finder.html">
-                    <button class="navbar-item button is-link is-outlined is-medium">
-                        Spell Finder
-                    </button>
-                </a>
-                <a href="dice-roller.html">
-                    <button class="navbar-item button is-link is-outlined is-medium">
-                        Dice Roller
-                    </button>
-                </a>
-            </div>
-        </nav>
-    </header>
-    <!-- Hero -->
-    <section class="hero mx-4">
-        <div class="hero-body page-content">
-            <p class="hero-text">
-                The Spell Book is a resource available for all users of D&D, no matter what skill level, to access
-                spells, dice rolls
-            </p>
-        </div>
-    </section>
+  <!-- nav header -->
+  <header class="is-flex is-justify-content-space-between">
+    <a href="/">
+      <h1 class="ml-4">The Spell Book</h1>
+    </a>
+    <nav>
+      <div class="mr-2 ">
+        <button class="navbar-item button is-link is-outlined is-medium">
+          Spell Finder
+        </button>
+        <button class="navbar-item button is-link is-outlined is-medium">
+          Dice Roller
+        </button>
+      </div>
+    </nav>
+  </header>
+  <!-- Hero -->
+  <section class="hero mx-4">
+    <div class="hero-body page-content">
+      <p class="hero-text">
+        The Spell Book is a resource available for all users of D&D, no matter what skill level, to access
+        spells, dice rolls
+      </p>
+    </div>
+  </section>
 
-    <!-- spell search form -->
-    <section class="columns">
-        <div class="column is-one-quarter p-2 my-4">
-            <form id="spell-search" class="spell-search page-content ml-4">
-                <select id="spell-type" class="form-content is-medium">
-                    <option value="1">Level</option>
-                    <option value="2">School</option>
-                    <option value="3">Both</option>
-                </select>
-                <input name="" id="username" type="text" autofocus="true" class="form-content is-medium"
-                    placeholder="Enter type name" />
-                <button type="submit" class="button is-medium is-link is-outlined">Search Spells!</button>
-            </form>
-            <div id="search-history" class="search-history ml-4 mt-4">
-                <h3>Search History</h3>
-            </div>
-        </div>
-        <div id="search-list" class="">
-            <img class="book-image"
-                src="./assets/images/spell_book_2__png_overlay__by_lewis4721_denr8s6-fullview.png" />
-        </div>
-    </section>
+  <!-- spell search form -->
+  <section class="columns">
+    <div class="column is-one-quarter p-2 my-4">
+      <form id="spell-search" class="spell-search page-content ml-4">
+        <select id="spell-type" class="form-content is-medium">
+          <option value="1">Level</option>
+          <option value="2">School</option>
+          <option value="3">Both</option>
+        </select>
+        <input name="" id="username" type="text" autofocus="true" class="form-content is-medium"
+          placeholder="Enter type name" />
+        <button type="submit" class="button is-medium is-link is-outlined">Search Spells!</button>
+      </form>
+      <div id="search-history" class="search-history ml-4 mt-4">
+        <h3>Search History</h3>
+      </div>
+    </div>
+    <div id="search-list" class="m-4">
+      <img class="book-image" src="./assets/images/spell_book_2__png_overlay__by_lewis4721_denr8s6-fullview.png" />
+    </div>
+  </section>
 
-    <!-- footer -->
-    <footer class="page-content footer">
-        <div class="content has-text-centered">
-            <p>
-                &copy; 2022 The Spell Book
-                <br> <strong> 🪄 Made by Erik Rockenmeyer, Luis Valenzuela, Anh Vuong, & Layne Wegenast 🔮 </strong>
-            </p>
-        </div>
-    </footer>
-    <!-- results -->
-    <script src="./assets/js/script.js"></script>
+  <!-- footer -->
+  <footer class="page-content footer">
+    <div class="content has-text-centered">
+      <p>
+        &copy; 2022 The Spell Book
+        <br> <strong> 🪄 Made by Erik Rockenmeyer, Luis Valenzuela, Anh Vuong, & Layne Wegenast 🔮 </strong>
+      </p>
+    </div>
+  </footer>
+  <!-- results -->
+  <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
