@@ -16,7 +16,7 @@ rollDiceBtnEl.addEventListener('click',()=>{
             fetch(diceURL).then(function(response) {
                 if (response.ok) {
                     response.json().then(function(data) {
-                   console.log(data);
+                   
                    getDiceResult(data);
                   
                 })
@@ -34,7 +34,7 @@ getDiceApi();
 var getDiceResult=function(data){
     
     var result=data.dice[0].value;
-    console.log(result);
+    
     resultEl.innerHTML=result;
 
 
