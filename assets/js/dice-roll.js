@@ -27,9 +27,9 @@ if(rollTimes.value>=1){
                   
                 })
                 } else {
-                    faultModalEl.style.display = "block";
+                    wrongModalEl.style.display = "block";
                     closeIconEl.onclick=function(){
-                        faultModalEl.style.display = "none";
+                        wrongModalEl.style.display = "none";
                     }
                 }
              })
