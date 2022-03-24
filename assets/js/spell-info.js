@@ -41,12 +41,14 @@ var displaySpellInfo = function (info) {
         var infoContainer = document.createElement("div");
         var nameEl = document.createElement("span");
         var infoEl = document.createElement("p");
+        // add classes to elements
+        nameEl.classList="has-text-weight-bold";
 
         // switch case to fill content
         var array = spellInfo[i];
         var key = array[0];
         var value = array[1];
-        
+
         // use switch case to check what to print
         switch (key) {
             case 'level':

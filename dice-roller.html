@@ -16,19 +16,123 @@
 </head>
 
 <body>
-  <input id="dice-input" type="number" />
-  <div class="dropdown is-active">
-    <select id="dice-type">
-      <option value="1">D4</option>
-      <option value="2">D6</option>
-      <option value="3">D8</option>
-      <option value="3">D10</option>
-      <option value="3">D12</option>
-      <option value="3">D20</option>
-    </select>
+
+  <header class="is-flex is-justify-content-space-between">
+    <a href="./index.html">
+      <h1 class="ml-4">The Spell Book</h1>
+    </a>
+    <nav>
+      <div class="mr-2">
+        <button class="navbar-item button is-link is-outlined is-medium">
+          Spell Finder
+        </button>
+      </div>
+    </nav>
+  </header>
+
+
+  <!--Hero-->
+  <section class="hero mx-4">
+    <div class="hero-body page-content">
+      <p class="hero-text">
+        The Spell Book is a resource available for all users of D&D, no matter what skill level, to access
+        spells, dice rolls
+      </p>
+    </div>
+  </section>
+
+
+
+
+  <!-- dice roll form-->
+  <div class="columns mx-3">
+    <section class="dice-roller column is-two-fifths mx-4 is-justify-content-center my-6">
+      <div class="columns">
+        <input class="column m-4" id="times" type="number" placeholder="Select number of dice" />
+
+        <select id="dice-type" class="column-3 m-4">
+          <option value="1">D4</option>
+          <option value="2">D6</option>
+          <option value="3">D8</option>
+          <option value="4">D10</option>
+          <option value="5">D12</option>
+          <option value="6">D20</option>
+        </select>
+
+        <button type="submit" class="btn button is-medium is-link is-outlined column">Roll Dice</button>
+      </div>
+    </section>
+    <!--dice display-->
+    <section id="display" class="dice-display column mx-3 my-6 is-half">
+      <div id="dice-display">
+        <p>
+          Dice Display:
+        </p>
+        <div id="result">
+
+        </div>
+      </div>
+    </section>
   </div>
-  <button type="submit" class="btn">Roll Dice</button>
-  <div id="dice-display"></div>
+
+  <!-- The Modal for Number of dice -->
+  <div  class="modal" id="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <div class="card">
+        <div class="card-content">
+          <div class="content">
+            Please pick a number that is greater than 1
+          </div>
+        </div>
+      </div>
+    </div>
+    <button id="close-icon" class="modal-close is-large" aria-label="close"></button>
+  </div>
+
+  <!-- The Modal for Something went wrong -->
+  <div  class="modal" id="wrong-modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <div class="card">
+        <div class="card-content">
+          <div class="content">
+            Something went wrong
+          </div>
+        </div>
+      </div>
+    </div>
+    <button id="close-icon" class="modal-close is-large" aria-label="close"></button>
+  </div>
+
+  <!-- The Modal for Number of dice -->
+  <div  class="modal" id="error-modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <div class="card">
+        <div class="card-content">
+          <div class="content">
+            Unable to connect to the Dice Api
+          </div>
+        </div>
+      </div>
+    </div>
+    <button id="close-icon" class="modal-close is-large" aria-label="close"></button>
+  </div>
+  
+
+
+
+  <!-- footer -->
+  <footer class="page-content footer">
+    <div class="content has-text-centered">
+      <p>
+        &copy; 2022 The Spell Book
+        <br> <strong> 🪄 Made by Erik Rockenmeyer, Luis Valenzuela, Anh Vuong, & Layne Wegenast 🔮 </strong>
+      </p>
+    </div>
+  </footer>
+
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="./assets/js/dice-roll.js"></script>
 </body>
