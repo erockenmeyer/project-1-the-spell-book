@@ -35,7 +35,7 @@ if(rollTimes.value>=1){
              })
             .catch(function(error){
                 errorModalEl.style.display = "block";
-                closeIconEl.onclick=function(){
+                errorModalEl.onclick=function(){
                     errorModalEl.style.display = "none" ;
                 }
             });

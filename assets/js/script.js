@@ -42,7 +42,7 @@ var getSpellList = function (type, keyword) {
         var schools = [];
 
         // checks each variable in the array and assigns to either levels or schools arrays
-        for (var i = 0; i < keyword.length; i++) {
+        for (var i = 0; i < splitKey.length; i++) {
             var char = splitKey[i];
             if (parseInt(char)) {
                 levels.push(char);
