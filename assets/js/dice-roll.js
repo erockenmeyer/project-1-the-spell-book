@@ -4,6 +4,10 @@ var resultEl=document.querySelector('#result');
 var rollDiceBtnEl=document.querySelector('.btn');
 var chosenType;
 var rollTimes=document.querySelector('#times');
+var modalEl=document.querySelector('#modal');
+var closeIconEl=document.querySelector('#close-icon');
+var errorModalEl=document.querySelector('#error-modal');
+var wrongModalEl=document.querySelector('#wrong-modal');
 
 //choose dice type for api 
 rollDiceBtnEl.addEventListener('click',()=>{
@@ -23,17 +27,26 @@ if(rollTimes.value>=1){
                   
                 })
                 } else {
-                    alert("Something went wrong!");
+                    faultModalEl.style.display = "block";
+                    closeIconEl.onclick=function(){
+                        faultModalEl.style.display = "none";
+                    }
                 }
              })
             .catch(function(error){
-                alert('Unable to connect to Dice Api');
+                errorModalEl.style.display = "block";
+                closeIconEl.onclick=function(){
+                    errorModalEl.style.display = "none" ;
+                }
             });
 };
 getDiceApi();
 }
 else{
-    alert('please pick a number that is greater than 1');
+    modalEl.style.display = "block";
+    closeIconEl.onclick=function(){
+        modalEl.style.display="none";
+    }
 }
 
 });
@@ -59,9 +72,8 @@ var getDiceResult=function(data){
 
 }
 
-function refreshPage(){
-    window.location.reload();
-} 
+
+
 
 
 
