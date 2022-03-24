@@ -16,53 +16,63 @@
 </head>
 
 <body>
-  <!-- nav header -->
-  <header class="is-flex is-justify-content-space-between">
-    <a href="/">
-      <h1 class="ml-4">The Spell Book</h1>
-    </a>
-    <nav>
-      <div class="mr-2 ">
-        <button class="navbar-item button is-link is-outlined is-medium">
-          Spell Finder
-        </button>
-        <button class="navbar-item button is-link is-outlined is-medium">
-          Dice Roller
-        </button>
-      </div>
-    </nav>
-  </header>
-  <!-- Hero -->
-  <section class="hero mx-4">
-    <div class="hero-body page-content">
-      <p class="hero-text">
-        The Spell Book is a resource available for all users of D&D, no matter what skill level, to access
-        spells, dice rolls
-      </p>
-    </div>
-  </section>
 
-  <!-- spell search form -->
-  <section class="columns">
-    <div class="column is-one-quarter p-2 my-4">
-      <form id="spell-search" class="spell-search page-content ml-4">
-        <select id="spell-type" class="form-content is-medium">
-          <option value="1">Level</option>
-          <option value="2">School</option>
-          <option value="3">Both</option>
-        </select>
-        <input name="" id="username" type="text" autofocus="true" class="form-content is-medium"
-          placeholder="Enter type name" />
-        <button type="submit" class="button is-medium is-link is-outlined">Search Spells!</button>
-      </form>
-      <div id="search-history" class="search-history ml-4 mt-4">
-        <h3>Search History</h3>
-      </div>
-    </div>
-    <div id="search-list" class="m-4">
-      <img class="book-image" src="./assets/images/spell_book_2__png_overlay__by_lewis4721_denr8s6-fullview.png" />
-    </div>
-  </section>
+    <!-- nav header -->
+    <header class="is-flex is-justify-content-space-between">
+        <a href="/">
+            <h1 class="ml-4">The Spell Book</h1>
+        </a>
+        <nav >
+            <div class="mr-2">
+                <button class="navbar-item button is-link is-outlined is-medium">
+                    Spell Finder
+                </button>
+                <button class="navbar-item button is-link is-outlined is-medium">
+                    Dice Roller
+                </button>
+            </div>
+        </nav>
+    </header>
+    <!-- Hero -->
+    <section class="hero mx-4">
+        <div class="hero-body page-content">
+            <p class="hero-text">
+                The Spell Book is a resource available for all users of D&D, no matter what skill level, to access
+                spells, dice rolls
+            </p>
+        </div>
+    </section>
+
+    <br>
+
+    <!-- spell search form -->
+ <section class="columns">
+       <div class="column is-one-quarter p-2 my-4">
+         <form id="spell-search" class="spell-search page-content ml-4">
+              <select id="spell-type" class="form-content is-medium">
+                  <option value="1">Level</option>
+                  <option value="2">School</option>
+                  <option value="3">Both</option>
+              </select>
+             <input name="" id="username" type="text" autofocus="true" class="form-content is-medium" placeholder="Enter type name" />
+              <button type="submit" class="button is-medium is-link is-outlined">Search Spells!</button>
+          </form>
+
+           <div id="search-history" class="search-history ml-4 mt-4">
+         <h3>Search History</h3>
+          </div>
+         </div>
+            <div id="search-list" class="search-results ml-4 mt-4 column is-two-thirds">
+               <h3>Search List:</h3>
+
+               <div>
+                <img class="book-image" src="./assets/images/spell_book_2__png_overlay__by_lewis4721_denr8s6-fullview.png"/>
+              </div>
+
+          </div>
+         
+ </section>
+
 
   <!-- footer -->
   <footer class="page-content footer">
