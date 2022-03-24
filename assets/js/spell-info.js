@@ -111,7 +111,9 @@ var displaySpellInfo = function (info) {
                 break;
             case 'dc':
                 nameEl.textContent = "DC";
-                infoEl.textContent = value;
+                var dcInfo = Object.entries(value);
+                var dcType = Object.entries(dcInfo[0][1]);
+                infoEl.textContent = dcType[1][1];
                 break;
             case 'desc':
                 nameEl.textContent = "Description";
