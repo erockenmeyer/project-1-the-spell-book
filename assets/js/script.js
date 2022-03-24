@@ -28,9 +28,13 @@ var formSubmitHandler = function (event) {
 var getSpellList = function (type, keyword) {
 
     // checks for multiple types
-    if (type === "Level" || type === "School") {
+    if (type === "Level") {
         // format api url
-        var apiUrl = "https://www.dnd5eapi.co/api/spells?" + type + "=" + keyword;
+        var apiUrl = "https://www.dnd5eapi.co/api/spells?level=" + keyword;
+    } else if (type === "School") {
+        // format api url
+        var apiUrl = "https://www.dnd5eapi.co/api/spells?school=" + keyword;
+        
     } else {
         // turns key into array
         var splitKey = keyword.split(" ");
