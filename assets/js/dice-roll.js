@@ -16,8 +16,9 @@ rollDiceBtnEl.addEventListener('click',()=>{
     
 if(rollTimes.value>=1){
     var getDiceApi =function(){
+        
   
-        var diceURL="http://roll.diceapi.com/json/" + rollTimes.value+chosenType;
+        var diceURL="https://rolz.org/api/?" + rollTimes.value+chosenType+".json";
     
             fetch(diceURL).then(function(response) {
                 if (response.ok) {
@@ -52,23 +53,9 @@ else{
 });
 var getDiceResult=function(data){
     resultEl.textContent = "";
-    for (var i=0; i<rollTimes.value;i++){
-    var result=data.dice[i].value;
+    var result=data.details;
+    resultEl.innerHTML=result;
     
-    //resultEl.innerHTML=result;
-    //create a container for each dice result
-        var containerEl=document.createElement("div");
-        //can put class list here
-        //containEl.classList=
-    //create span element to hold the result
-        var resultSpanEl=document.createElement("span");
-        resultSpanEl.textContent=result;
-    //append container
-        containerEl.appendChild(resultSpanEl);
-    //append container to the DOM
-        resultEl.appendChild(containerEl);
-
-    }
 
 }
 
