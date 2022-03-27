@@ -1,6 +1,6 @@
 # Welcome to THE SPELL BOOK
 ## Here is the link to our website:
-https://laynewegenast.github.io/project-1-the-spell-book/
+https://erockenmeyer.github.io/project-1-the-spell-book/
 
 ## Concept:
 ### The Spell Book is a site for the avid D&D Spellcaster to access in depth information regarding spells. The user may search through spells by level, school, or both, and are then able to select any listed spell to access more information. In addition to this feature, the site also offers a dice rolling feature where the user may roll any given number of a specific dice type. 
