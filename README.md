@@ -14,7 +14,7 @@ https://laynewegenast.github.io/project-1-the-spell-book/
 
 ### Spell Information page: 
 
-![Screen Shot 2022-03-27 at 2 57 01 PM](https://user-images.githubusercontent.com/96094719/160299863-b8c95299-3e3d-486b-87f4-11abd8ba2d49.png)
+![Screen Shot 2022-03-27 at 3 24 41 PM](https://user-images.githubusercontent.com/96094719/160300374-24c34dc4-2b14-45aa-b600-39b54aefb55e.png)
 
 ### When the user slects a spell from the list presented on the landing page, they will then be presented with a full in-depth list of information on the Spell Information page. This information will include many details including the spell name, description, at higher levels, range, components, material, ritual, duration, concentration, casting time, level, school, and class. From this page, the user may then click 'The Spell Book' to return home or also click the 'Dice Roller' button to move to that page.
 
