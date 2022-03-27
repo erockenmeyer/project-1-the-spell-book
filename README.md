@@ -10,5 +10,5 @@ https://laynewegenast.github.io/project-1-the-spell-book/
 
 ### Spell Information page: When the user slects a spell from the list presented on the landing page, they will then be presented with a full in-depth list of information on the Spell Information page. This information will include many details including the spell name, description, at higher levels, range, components, material, ritual, duration, concentration, casting time, level, school, and class. From this page, the user may then click 'The Spell Book' to return home or also click the 'Dice Roller' button to move to that page.
 
-### Dice rolling page:
+### Dice rolling page: When the user selects the 'Dice Roller' page, they will be presented with a number input to select the number of dice to be rolled, as well as a dropdown menu to select the desired dice type (D4-D12, D20). When the user selects 'Roll Dice' randomized number will be presented in the Dice Display box. The user may continue to select 'Roll Dice' in order to get a different group of numbers. 
 
