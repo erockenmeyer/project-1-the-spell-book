@@ -8,7 +8,7 @@ https://laynewegenast.github.io/project-1-the-spell-book/
 ## How to use our site:
 ### Front page: When accessing The Spell Book from the landing page, the user is greeted with the initial page for searching spells. In addition to this, there is also a button in the nav bar which will take the user to the Dice Roller page. The user is able to selects Level, School, or Both from a dropdown menu (currently 'Level' would be the default), and then they may proceed to enter the type of spell they are hoping to search for, if incorrect information is entered the user will be presented with an error message. When a search request is entered, a list of relevant spells will appear from which the user may select their desired spell. When the spell is selected, the user will then be taken to the Spell Information page. The users search history will also be stored and visually presented on the landing page.
 
-### Spell Information page: When the user slects a spell from the list presented on the landing page, they will then be presented with a full in-depth list of information on the Spell Information page. This information will include many details including the spell name, 
+### Spell Information page: When the user slects a spell from the list presented on the landing page, they will then be presented with a full in-depth list of information on the Spell Information page. This information will include many details including the spell name, description, at higher levels, range, components, material, ritual, duration, concentration, casting time, level, school, and class. From this page, the user may then click 'The Spell Book' to return home or also click the 'Dice Roller' button to move to that page.
 
 ### Dice rolling page:
 
